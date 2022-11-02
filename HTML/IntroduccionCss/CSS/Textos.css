@@ -1,0 +1,11 @@
+/* Es mejor usarlo en el css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
+/* que todo el documento uso ciertas caracteristicas */
+html {
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* podemos trabajar con puntos, pixeles y tambien con predeterminados */
+    font-size: 14pt;
+    /* el peso de la fuente aunque depende de la fuente */
+    font-weight: 800;
+}

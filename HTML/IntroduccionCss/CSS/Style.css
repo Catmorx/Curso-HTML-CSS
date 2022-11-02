@@ -1,0 +1,43 @@
+h1{ /* hace referencia a todos los h1*/
+    color: brown;
+}
+p{
+    color: blueviolet;
+    font-size: 25pt;
+}
+
+/* Selectores de id con #
+Si pones el nombre de la etiqueta al inicio p#segundo, inferimos que será unicamente a los parrafos*/
+#segundo {
+    color : blue;
+    font-size: 10pt;
+}
+
+.primer {
+    color :cadetblue;
+}
+/* transform nos cambia la naturaleza del escrito a minusculas, mayus o capitalize */
+.encabezado {
+    font-size: 24pt;
+    text-transform: capitalize;
+}
+/* selectores universales para especificar unas caractacteristicas de estilo */
+
+*{
+    color: yellow;
+}
+/* las clases predominan sobre los id */
+/* Especifica que los que tenga la clase warning tendran las especificaciones de dentro */
+*.warning {
+    color: red;
+    text-decoration: underline;
+}
+
+h1, .primer, #segundo {
+    text-decoration: overline;
+}
+
+/* Tambien podemos especificar que etiqueta con que selector se verá afectada unicamente */
+ul li#elemento-1 {
+    font-size: 2rem;
+}

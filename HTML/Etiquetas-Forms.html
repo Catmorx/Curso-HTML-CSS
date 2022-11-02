@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="resultados.html" method="Get">
+        <!-- Agrupa una serie de elementos, checkbox, inputs, etc-->
+        <div>
+        <label for="user">Nombre de usuario</label>
+        <input name="user" id="user" required> 
+        <!-- required : para que el input sea una campoobligatorio a completar -->
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required>
+        </div>
+        <div>
+            <label for="pass">Contraseña</label>
+            <input name="pass" id="pass" type="password" required>
+        </div>
+        <div>
+            <label for="birth">Fecha de nacimiento</label>
+            <input name="birth" id="birth" type="date" required>
+        </div>
+        <div>
+            <label for="edad">Cuál es tu edad</label>
+            <input type="number" name="edad" id="edad" required min="0" max="110" step="2">
+            <!-- min: sera el valor minimo del input
+            max: el valor maximo como limite del input
+            step: según el número que almacenemos dará los pasos de 2 en 2 o de 10 en 10 depende del numero -->
+        </div>
+        <div>
+            <label for="comment">Comentarios</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
